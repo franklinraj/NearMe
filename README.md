@@ -1,10 +1,12 @@
 # Ex04 Places Around Me
-## Date: 
+## Date:13-11-2024
+## NameFRANKLIN RAJ G
+## Reg No:212223230058
 
-## AIM
+## AIM:
 To develop a website to display details about the places around my house.
 
-## DESIGN STEPS
+## DESIGN STEPS:
 
 ### STEP 1
 Create a Django admin interface.
@@ -24,10 +26,52 @@ Write HTML programs for all the regions identified.
 ### STEP 6
 Execute the programs and publish them.
 
-## CODE
+## CODE:
+~~~
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{margin: 0;}
+</style>
+<script>
+    function coordinate(event){
+        let x=event.clientX;
+        let y=event.clientY;
+        document.getElementById("text1").value=x;
+        document.getElementById("text2").value=y;
+    }
+</script>
+<body>
+    <img src="map.png" width="1500" height="650" usemap="#MapNew" onmousemove="coordinate(event)">
+    <MAP name="MapNew">
+        <area shape="rect" coords="198,294,240,313" href="https://apolloartsandsciencecollegechennai.ac.in/" Title="Apollo Arts And Science" >
+        <area shape="rect" coords="297,330,380,393" href="https://www.saveetha.ac.in/" Title="Saveetha Engineering College" >
+        <area shape="rect" coords="943,117,1000,184" href="https://sapoly.edu.in/" Title="SA Polytechnic College" >
+        <area shape="rect" coords="1152,280,1227,328" href="https://www.sriramachandra.edu.in/" Title="Sri Ramachandra Hospitals" >
+        <area shape="rect" coords="928,10,1005,13" href="https://www.mahalakshmi.edu.in/" Title="Mahalakshmi Women's College" >
+        <area shape="rect" coords="1143,211,1209,254" href="https://www.alphagroup.edu.in/" Title="Alpha Arts And Science College" >
+
+    </MAP>
+    <br>
+    X coordinator
+    <input type="text" id="text1">
+    <br>
+    Y coordinate
+    <input type="text" id="text2">
+</body>
+</html>
+~~~
 
 
-## OUTPUT
+## OUTPUT:
+
+![image](https://github.com/user-attachments/assets/cbe56946-220e-4095-ac7a-5c2abe4def9a)
 
 
 
@@ -35,5 +79,5 @@ Execute the programs and publish them.
 
 
 
-## RESULT
+## RESULT:
 The program for implementing image maps using HTML is executed successfully.
